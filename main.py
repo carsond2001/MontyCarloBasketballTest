@@ -77,6 +77,7 @@ def main():
         result = is_hit(x, y, max_backball_range, max_hoop_distance)
         if result != "out of range":
             shots.append((x, y, result))
+            total_shots = total_shots + 1
 
         if result == "hit":
             hits += 1
